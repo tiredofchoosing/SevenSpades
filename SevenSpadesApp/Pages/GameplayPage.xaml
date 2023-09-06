@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SevenSpadesApp.Pages.GameplayPage"
+             xmlns:controls="clr-namespace:SevenSpadesApp.Controls"
+             Title="GameplayPage">
+
+    <ScrollView
+        BackgroundColor="Gray"
+        MinimumWidthRequest="300"
+        MaximumWidthRequest="400">
+
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Grid ColumnDefinitions="Auto,Auto" HorizontalOptions="Center">
+
+                <Label
+                    Text="Раздача #"
+                    FontSize="32"
+                    Grid.Column="0"/>
+
+                <Label
+                    x:Name="dealCountLbl"
+                    Text="1"
+                    FontSize="32"
+                    Grid.Column="1"/>
+            </Grid>
+
+            <Grid ColumnDefinitions="Auto,Auto" HorizontalOptions="Center">
+
+                <Label
+                    Text="Количество карт:"
+                    FontSize="26"
+                    Grid.Column="0"/>
+
+                <Label
+                    x:Name="cardNumberLbl"
+                    Text="1"
+                    FontSize="26"
+                    Grid.Column="1"/>
+            </Grid>
+
+            <VerticalStackLayout x:Name="playersBidInfo">
+                <!--<controls:PlayerBidInfo/>-->
+            </VerticalStackLayout>
+
+            <Button
+                x:Name="nextDealBtn"
+                Text="Сохранить"
+                FontSize="36"
+                HeightRequest="80"
+                CornerRadius="40"
+                Clicked="OnNextDealBtn_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="resultBtn"
+                Text="Завершить"
+                FontSize="36"
+                HeightRequest="80"
+                CornerRadius="40"
+                Clicked="OnResultBtn_Clicked"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

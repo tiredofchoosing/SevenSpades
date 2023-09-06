@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SevenSpadesApp.Controls.PlayerInitInfo"
+             x:Name="this">
+
+    <Grid x:Name="mainGrid" ColumnDefinitions="Auto,*" HorizontalOptions="Fill">
+
+        <Label
+            x:Name="playerIdLbl"
+            Text="*"
+            FontSize="32"
+            HorizontalOptions="Center"
+            Grid.Column="0"/>
+
+        <Entry
+            x:Name="playerNameEntry"
+            Placeholder="Player *"
+            MaxLength="10"
+            FontSize="32"
+            HorizontalOptions="Fill"
+            Grid.Column="1"/>
+    </Grid>
+    
+</ContentView>

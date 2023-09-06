@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SevenSpadesApp.Pages.ResultsPage"
+             Title="ResultsPage">
+
+    <ScrollView
+        BackgroundColor="Gray"
+        MinimumWidthRequest="300"
+        MaximumWidthRequest="400">
+
+        <VerticalStackLayout
+            x:Name="vsl"
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Победитель:"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            
+            <Label
+                x:Name="playerName"
+                Text="Player"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
